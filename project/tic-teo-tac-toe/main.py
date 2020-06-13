@@ -60,17 +60,21 @@ def compMove():
             if isWinner(boardCopy,let):
                 move = i
                 return move
+
     cornerOpen =[]
     for i in possibleMoves:
         if i in [1,3,7,9]:
-            cornerOpen.appen(i)
+            cornerOpen.append(i)
+
     if len(cornerOpen)> 0:
         move  = selectRandom(cornerOpen)
         return move
+
     if 5 in possibleMoves:
         move = 5
         return move
     edgesOpen =[]
+
     for i in possibleMoves:
             if i in [1,3,7,9]:
                 edgesOpen.append(i)
@@ -79,12 +83,13 @@ def compMove():
 
     return move
 
-def selectRandom(board):
+def selectRandom(li):
     import random
     ln =len(li)
     r= random.randrange(0,ln)
     return li[r]
-    pass
+
+
 def isBoardfull(board):
     if board.count(' ')>1:
         return False
@@ -94,6 +99,7 @@ def isBoardfull(board):
 def main():
     print('Welcome to Tic Tac Toe!')
     printBoard(board)
+
     while not(isBoardfull(board)):
         if not(isWinner(board,'O')):
             playerMove()
@@ -105,15 +111,19 @@ def main():
         if not(isWinner(board,'X')):
             move = compMove()
             printBoard(board)
+
             if move == 0:
                 print('Tie game!')
+
             else:
-                insertLetter('O',board)
+                insertLetter('O',move)
                 print('Computer placed an\'O\' in position ',move,':')
                 printBoard(board)
+
         else:
             print(' X\'s won this time Well played')
             break
+
     if isBoardfull(board):
         print('Tie game >:(')
 
