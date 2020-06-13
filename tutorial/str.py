@@ -33,7 +33,6 @@ greet= "        hello    :0     "
 print(greet.lstrip()) # left strip 왼족 공백제거
 print(greet.rstrip())# right strip 오른쪽 공백제거
 print(greet.strip())# 양쪽 공백 제거
-
 #시작문자열 찾기  startswith start str with 의 줄인말인거같다.
 
 line = 'Please have a nice day'
