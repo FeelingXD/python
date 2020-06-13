@@ -12,3 +12,6 @@ offmeeting = randint(1,28)
 while (offmeeting in [1,2,3]):
     offmeeting = randint(1,28)
 print('오프라인 스터디 모임 날짜는 매월' + str(offmeeting) +'일로 선정되었습니다.')
+
+
+# randint값을 4,28 로 제한했다면 더 간단하게 구현했을거같다.
