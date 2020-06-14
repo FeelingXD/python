@@ -1,3 +1,5 @@
 print("백문이 불여일견 \n 백문이 불여일타")# \n 줄바꾸기
 
-print("Red Apple\rPine")
+print("Red Apple\rPine")#\r 커서를 맨앞으로 이동시키고 뒤에 나오는 글을 덮어씀
+#\b  백스페이스 하나 지우기
+#\t 탭
