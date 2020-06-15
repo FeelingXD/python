@@ -21,6 +21,6 @@ print(java.difference(python))
 # 추가하기
 java.add('김태호')
 print(java)
-
+# 제거하기
 java.remove('김태호')
 print(java)
