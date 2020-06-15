@@ -22,7 +22,7 @@ firstwinner = sample(winners,1)
 winners =list(set(winners) - set(firstwinner))
 def print_winner(a,b):
     print("-- 당첨자 발표 --")
-    print(f'치킨당첨자 : {a} ' )
+    print(f'치킨당첨자 : {a}')
     print(f'커피당첨자 : {b}')
     print("-- 축하합니다. --")
 
