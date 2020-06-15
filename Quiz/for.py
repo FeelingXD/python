@@ -26,7 +26,20 @@ while person !=customer:
     person = input("이름이 어떻게 되세요? :")
 '''
 absent =[2,5]
+no_book=[7]
 for student in range(1,11): # 1~10
     if student in absent:
-        continue
+        continue  # 건너뛰고 다음 번호 실행
+    elif student in no_book:
+        print("오늘수업은 여기까지 {}은 교무실로".format(student))
+        break
     print("{},책을 읽어봐".format(student))
+
+# 한줄로 작성하는 for 문
+
+students = [i for i in range(1,11)]
+print(students)
+
+fruits = ["banana","apple"]
+fruits = [i.upper() for i in fruits]
+print(fruits)
