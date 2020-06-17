@@ -25,7 +25,7 @@ print('수수료는 {} 원이며, 잔액은 {}원입니다.'.format(commission,b
 #        print("이름 :{}\t 나이 : {}\t 주 언어 : {}"\
 #        .format(name,age,main_lang))
 
-def profile(name,age,*language):
+def profile(name,age,*language):           #가변인자 사용
     print('이름 : {}\t 나이 : {}\t'.format(name,age), end =" ")
 
     for i in language:
