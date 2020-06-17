@@ -20,3 +20,17 @@ balance = deposit(balance,1000)
 balance = withdraw(balance,2000)
 commission, balance=withdraw_night(balance,500)
 print('수수료는 {} 원이며, 잔액은 {}원입니다.'.format(commission,balance))
+
+#def profile(name,age,main_lang):
+#        print("이름 :{}\t 나이 : {}\t 주 언어 : {}"\
+#        .format(name,age,main_lang))
+
+def profile(name,age,*language):
+    print('이름 : {}\t 나이 : {}\t'.format(name,age), end =" ")
+
+    for i in language:
+        print(i,end=' ')
+    print()
+
+profile('유재석',20,'파이선','a','c','c++')
+profile('김태호',20,'자바')
