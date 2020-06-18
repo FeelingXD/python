@@ -34,3 +34,20 @@ wraith.clocking= True
 
 firebat1 = atkUnit("파이어뱃",50,16)
 firebat1.damaged(50)
+
+# 드랍쉽 상송 예제
+
+class Flyable:
+    def __init__(self,flying_speed):
+        self.flying_speed=flying_speed
+    def fly(self,name,location):
+        print('{}:{}로 날아가고있습니다.[속도:{}]'.format(name,location,self.flying_speed))
+
+# 공중 공격 유닛 클래스
+class FlyAttackUnit(atkUnit,Flyable): # 클래스 불러오는 요소 ( 내부에 필요 클래스를 상속함)
+    def __init__(self,name,hp,damage,flying_speed):
+        atkUnit.__init__(self,name,hp,damage)
+        Flyable.__init__(self,flying_speed)
+
+valkyrie = FlyAttackUnit("발키리",200,6,5)
+valkyrie.fly(valkyrie.name,"3시방향")
