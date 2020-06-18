@@ -20,8 +20,8 @@ while True:
     print(line)
 score_file.close()
 '''
-score_file = open("score.txt", "r",encoding='utf8')
-lines = score_file.readline()# list형으로저장
+score_file = open("score.txt", "r", encoding='utf-8')
+lines = score_file.readlines() # list형으로저장
 for line in lines:
     print(line,end="")
 
