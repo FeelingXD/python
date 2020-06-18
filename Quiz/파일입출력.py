@@ -21,7 +21,7 @@ while True:
 score_file.close()
 '''
 score_file = open("score.txt", "r", encoding='utf-8')
-lines = score_file.readlines() # list형으로저장
+lines = score_file.readlines() # list형으로저장 readline = 한준읽기 readlines = 전체 읽어서 리스트형태로 읽기
 for line in lines:
     print(line,end="")
 
