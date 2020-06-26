@@ -4,17 +4,13 @@ class Slist:
         def __init__(self,item,link):
             self.item=item
             self.next=link
-
     def __init__(self):
         self.head=None
         self.size=0
-
     def size(self):
         return self.size
-
     def is_empty(self):
         return self.size==0
-
     def insert_front(self,item):
         if self.is_empty():
             self.head=self.Node(item,None)
@@ -37,7 +33,6 @@ class Slist:
                     return k
                 p=p.next
             return None
-
     def print_list(self):
         p=self.head
         while p:
@@ -46,9 +41,6 @@ class Slist:
             else:
                 print(p.item)
             p=p.next
-
-
-
 nodelist =Slist()
 nodelist.__init__()
 print(nodelist.is_empty())
