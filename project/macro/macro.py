@@ -1,12 +1,13 @@
 import pyautogui
-import time
+import msvcrt as ms
+
+img = pyautogui.locateOnScreen('clickit.png')
+img_center = pyautogui.center(img)
+
 while True:
-    n = input("")
-    if(n==''):
+    pyautogui.click(img_center)
+    pyautogui.press('enter')
+    pyautogui.press('enter')
+    key = ms.getch().decode('ASCII')
+    if(key!='\n'):
         exit()
-    img = pyautogui.locateOnScreen('img/clickit.png')
-    q= pyautogui.center(img)
-    pyautogui.click(q)
-    pyautogui.press('enter')
-    pyautogui.press('enter')
-    time.sleep(2)
