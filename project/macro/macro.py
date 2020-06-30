@@ -1,7 +1,7 @@
 import pyautogui
 import msvcrt as ms
 
-img = pyautogui.locateOnScreen('clickit.png')
+img = pyautogui.locateOnScreen('img/clickit.png')
 img_center = pyautogui.center(img)
 
 while True:
