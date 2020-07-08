@@ -10,3 +10,5 @@ print(a[0])
 
 b=["banana","apple","list in python"]
 print(b)
+b=list(input().split())
+print(b)
