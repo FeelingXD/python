@@ -10,9 +10,11 @@ async def on_read():
     return
 @client.event
 async def on_message(message):
+
     if message.author == client.user:
         return
     if message.content.startswith('기가희재'):
         await message.channel.send('네?')
 
-client.run('NzMwNTc4ODc0ODE1MjE3NzE1.XwbidA.GpPUdzJcAv0L2tiZoGwcKf109Vg')
+
+client.run('NzMwNTc4ODc0ODE1MjE3NzE1.XwbqsQ.L-zTt39fd5PRhuDRb9jI5FlEY3Q')
