@@ -9,4 +9,4 @@ def Who_over_average(list):
 case = int(input())
 for i in range(case):
     s_list = list(map(int,input().split()))
-    print('{0:.2f}%'.format((Who_over_average(s_list)*100)))
+    print('{0:.3f}%'.format((Who_over_average(s_list)*100)))
