@@ -27,8 +27,8 @@ def mouse_callback(event,x,y,flags,param):
         cv.imshow("img_color", img_result)
         cv.imshow("img_cat",img_cat)
 
-img_color = cv.imread('../img/solidWhiteCurve.jpg',cv.IMREAD_COLOR)
-cv.imshow("img_color",img_color)
+img_color = cv.imread('../../img/solidWhiteCurve.jpg',cv.IMREAD_COLOR)
+cv.imshow('img_color',img_color)
 cv.setMouseCallback('img_color',mouse_callback)
 
 cv.waitKey(0)
