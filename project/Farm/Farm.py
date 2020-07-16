@@ -11,7 +11,7 @@ def solve(head,totleg):
 head=int(input('head ?='))
 leg= int(input('leg?='))
 pig ,chicken =solve(head,leg)
-if pig==None and chicken == None:
+if pig==None:
     print('no solution')
 else:
     print('pig=',pig)
