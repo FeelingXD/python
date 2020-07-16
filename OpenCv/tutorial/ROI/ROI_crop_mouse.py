@@ -1,6 +1,8 @@
 import cv2 as cv
 import numpy as np
 
+#problem now .:/ it will be fixed
+
 isDragging = False#드래그상태
 x0,y0,w,h=-1,-1,-1,-1#영역 선택 좌표
 blue,red = (255,0,0),(0,0,255)#생상값
@@ -29,13 +31,14 @@ def onMouse(event,x,y,flags,param):#마우스이밴트 핸들
                 img_draw = img.copy()
                 cv.rectangle(img_draw,(x0,y0), (x,y), red ,2)
                 cv.imshow('img',img_draw)
-                roi = img[y:y0+h, x0:x0+w]
+                roi =img[y0:y0+h, x0:x0+w]
                 cv.imshow('null', roi)
 
                 cv.moveWindow('cropped',0,0)
                 cv.imwrite('../../img/cropped.png',roi)
                 print("cropped.")
             else:
+
                 # if wrong use this func it will show raw img
                 cv.imshow('img',img)
                 print("좌측상단에서 우측하단으로 드래그 하시오.")
