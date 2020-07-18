@@ -17,4 +17,4 @@ async def on_message(message):
         await message.channel.send('네?')
 
 
-client.run('NzMwNTc4ODc0ODE1MjE3NzE1.XwbqsQ.L-zTt39fd5PRhuDRb9jI5FlEY3Q')
+client.run('')
