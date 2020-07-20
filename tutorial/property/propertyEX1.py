@@ -11,3 +11,5 @@ class test:
 
 a= test()
 print(a.name)
+a.name= 'hg'
+print(a.name)
