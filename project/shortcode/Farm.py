@@ -2,7 +2,7 @@
 #totleg = chicken*2 + pig *4
 #tothead = chicken +pig
 def solve(head,totleg):
-    for chicken in range(1,head+1):
+    for chicken in range(0,head+1):
         pig=head-chicken
         if leg==4*pig+2*chicken:
             return pig,chicken
@@ -11,7 +11,7 @@ def solve(head,totleg):
 head=int(input('head ?='))
 leg= int(input('leg?='))
 pig ,chicken =solve(head,leg)
-if pig or chicken == None:
+if pig == None:
     print('no solution')
 else:
     print('pig=',pig)
