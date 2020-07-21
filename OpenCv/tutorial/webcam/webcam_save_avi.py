@@ -8,7 +8,7 @@ height = int(cap.get(cv.CAP_PROP_FRAME_HEIGHT))
 fourcc =cv.VideoWriter_fourcc(*'XVID')
 
 #컬러
-writer_c = cv.VideoWriter('output.avi',fourcc,30.0,(width,height))
+writer_c = cv.VideoWriter('../../video/output.avi',fourcc,30.0,(width,height))
 #그래이
 # writer_g = cv.VideoWriter('output.avi',fourcc,30.0,(width,height),0)
 
