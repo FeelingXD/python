@@ -1,2 +1,3 @@
-case =list(map(int,input()))
-print(sum(case))
+i=input
+i()
+print(sum(list(map(int,i()))))
