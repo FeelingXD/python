@@ -28,6 +28,6 @@ while True:
     if cv.waitKey(1)&0xff == 27:
         break
 
-cap.release()
-writer_c.release()
+cap.release() #연결종료
+writer_c.release()#연결종료
 cv.destroyAllWindows()
