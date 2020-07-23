@@ -5,13 +5,12 @@ cap = cv.VideoCapture(0)
 width = int(cap.get(cv.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv.CAP_PROP_FRAME_HEIGHT))
 
-fourcc =cv.VideoWriter_fourcc(*'XVID')
+fourcc = cv.VideoWriter_fourcc(*'XVID')
 
 #컬러
 writer_c = cv.VideoWriter('../../video/output.avi',fourcc,30.0,(width,height))
 #그래이
 # writer_g = cv.VideoWriter('output.avi',fourcc,30.0,(width,height),0)
-
 while True:
     ret,img = cap.read()
 
@@ -25,7 +24,7 @@ while True:
 
     writer_c.write(img)
 
-    if cv.waitKey(1)&0xff == 27:
+    if cv.waitKey(1)&0xff == 27: ## 0xff == esc
         break
 
 cap.release() #연결종료
