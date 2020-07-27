@@ -26,7 +26,7 @@ while True:
 
     if cv.waitKey(1)&0xff == 27: ## 0xff == esc
         break
-
+type(cap)
 cap.release() #연결종료
 writer_c.release()#연결종료
 cv.destroyAllWindows()
