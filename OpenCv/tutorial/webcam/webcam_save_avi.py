@@ -13,8 +13,7 @@ writer_c = cv.VideoWriter('../../video/output.avi',fourcc,30.0,(width,height))
 # writer_g = cv.VideoWriter('output.avi',fourcc,30.0,(width,height),0)
 while True:
     ret,img = cap.read()
-
-    if ret ==False:
+    if ret == False:
         break
 
     img_gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
