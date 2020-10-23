@@ -26,4 +26,5 @@ while True:
     else:
         print("Wrong")
     if succeed==True:
+        print("Success")
         break
