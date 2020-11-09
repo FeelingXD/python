@@ -1,5 +1,11 @@
 import sys
 
-a=sys.stdin
+length=int(sys.stdin.readline())
 
-print(type(a))
+for i in range(length):
+    if i%3==0:
+        print("A")
+    elif i%3==1:
+        print("B")
+    else:
+        print("C")
